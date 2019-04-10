@@ -167,7 +167,7 @@
               <li class="w3-padding-16">NASDAQ : 1 a day</li>
               <li class="w3-padding-16">Issued 24/7</li>
               <li class="w3-light-grey w3-padding-24">
-                  <a href="payment.php" class="w3-button w3-red w3-round" disabled>
+                  <a href="checkout.php" class="w3-button w3-red w3-round" >
                       <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
                   </a>
               </li>
