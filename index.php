@@ -167,7 +167,7 @@
               <li class="w3-padding-16">NASDAQ : 1 a day</li>
               <li class="w3-padding-16">Issued 24/7</li>
               <li class="w3-light-grey w3-padding-24">
-                  <a href="checkout.php" class="w3-button w3-red w3-round" >
+                  <a href="checkout.php?level=1" class="w3-button w3-red w3-round" target="_blank">
                       <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
                   </a>
               </li>
@@ -185,9 +185,9 @@
               <li class="w3-padding-16">Stocks : 3 a day</li>
               <li class="w3-padding-16">Issued 24/7</li>
               <li class="w3-light-grey w3-padding-24">
-                  <button class="w3-button w3-flat-turquoise w3-round" disabled>
+                  <a href="checkout.php?level=2" class="w3-flat-turquoise w3-button w3-round" target="_blank">
                       <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                  </button>
+                  </a>
               </li>
           </ul>
         </div>
@@ -203,9 +203,9 @@
               <li class="w3-padding-16">Stocks : Unlimited a day</li>
               <li class="w3-padding-16">Issued 24/7</li>
               <li class="w3-light-grey w3-padding-24">
-                  <button class="w3-button w3-red w3-round" disabled>
+                  <a href="checkout.php?level=3" class="w3-button w3-red w3-round" target="_blank">
                       <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                  </button>
+                  </a>
               </li>
           </ul>
         </div>
