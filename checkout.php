@@ -74,7 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     }
     else
     {
-        $name = test_input($_POST["name_first"]);
+        $username = test_input($_POST["name_first"]);
 
     }
 
@@ -108,9 +108,32 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         }
     }
 
-    $refferal = test_input($_POST["refferal"]);
+    $referral = test_input($_POST["refferal"]);
 
     $level = test_input($_SESSION['level']);
+
+    if(!$nameErr && !$emailErr && !$cellphoneErr)
+    {
+        $databaseConnect = database_connect();
+
+        if($databaseConnect['msg_type'] === "danger")
+        {
+            echo $databaseConnect['msg'];
+        }
+        else
+        {
+            $todaysDate = date("Y/m/d");
+            
+            $sendEmail = send_email($email);
+
+            if($sendEmail['msg_type'] === "success")
+            {
+                $storeData = store_subscriber($username, $email, $cellphone, $referral, $level, $todaysDate);
+
+            }
+
+        }
+    }
 
 }
 
@@ -121,6 +144,101 @@ function test_input($data)
     $data = htmlspecialchars($data);
 
     return $data;
+}
+
+function send_email($email)
+{
+
+    $to = "$email";
+    $subject = "HTML email";
+
+    $message = "<html lang='en'>
+                    <head>
+                        <title>HTML email</title>
+                    </head>
+                    <body>
+                    
+                        <p>This email contains HTML Tags!</p>
+                        
+                        <table>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                            </tr>
+                        </table>
+                    </body>
+                </html>";
+
+    // Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    // More headers
+    $headers .= 'From: <billing@snmfx.co.za>' . "\r\n";
+    $headers .= 'Cc: support@snmfx.co.za' . "\r\n";
+
+    if(mail($to,$subject,$message,$headers))
+    {
+        $msg =  array("msg"=>"Email sent to $to. Check the email for payment processes.", "msg_type"=>"success");
+
+    }
+    else
+    {
+        $msg =  array("msg"=>"Failed to sent email. Please make sure the email you provided is valid.", "msg_type"=>"danger");
+    }
+
+    return $msg;
+}
+
+function database_connect()
+{
+
+    $servername = "localhost";
+    $username = "snmfx";
+    $password = "snmfx@MusBon@9590";
+    $dbName = "snmfxslp_snmfx";
+
+    try
+    {
+
+        $conn = new mysqli($servername, $username, $password, $dbName);
+
+        $conectionMsg =  array("msg"=>"Connected successfully", "msg_type"=>"success", "conn"=>$conn);
+
+    }
+    catch(PDOException $e)
+    {
+        $conectionMsg = array("msg"=>"Connection failed: " . $e->getMessage(), "msg_type"=>"danger");
+    }
+
+    return $conectionMsg;
+
+}
+
+function store_subscriber($username, $email, $cellphone, $referral, $level, $todaysDate)
+{
+
+    $query = "INSERT INTO subscribers(sub_username, sub_email, sub_cell_number, sub_refferal, sub_level, sub_created_date )
+             VALUES($username, $email, $cellphone, $referral, $level, $todaysDate )";
+
+//    $db = $databaseConnect->prepare($query);
+//
+//    //$db->execute(array($query));
+//
+//    $db->execute([
+//        'id'=> 1,
+//        'username'=> $username,
+//        'email'=> $email,
+//        'cell_number'=> $cellphone,
+//        'refferal'=> $referral,
+//        'Clevel'=> $level,
+//        'todaysDate'=> $todaysDate
+//    ]);
+
 }
 
 ?>
