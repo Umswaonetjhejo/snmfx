@@ -139,8 +139,12 @@
     <div class="w3-row-padding" style="margin-top:64px">
 
         <div class="w3-quarter w3-section">
+
+        </div>
+
+        <div class="w3-quarter w3-section">
           <ul class="w3-ul w3-white w3-hover-shadow">
-            <li class="w3-flat-turquoise w3-xlarge w3-padding-32">Level 1</li>
+            <li class="w3-flat-turquoise w3-xlarge w3-padding-48">Level 1</li>
             <li class="w3-padding-16">
                 <h2 class="w3-wide">Free</h2>
                 <span class="w3-opacity">per month</span>
@@ -157,24 +161,32 @@
         </div>
 
         <div class="w3-quarter" aria-disabled="true">
-          <ul class="w3-ul w3-white w3-hover-shadow">
-            <li class="w3-red w3-xlarge w3-padding-48">Level 2</li>
-              <li class="w3-padding-16">
-                  <h2 class="w3-wide">$ 10</h2>
-                  <span class="w3-opacity">per month</span>
-              </li>
-              <li class="w3-padding-16">Signal 5-10 a day</li>
-              <li class="w3-padding-16">NASDAQ : 1 a day</li>
-              <li class="w3-padding-16">Issued 24/7</li>
-              <li class="w3-light-grey w3-padding-24">
-                  <a href="checkout.php?level=2" class="w3-button w3-red w3-round" target="_blank">
-                      <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                  </a>
-              </li>
-          </ul>
+              <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-red w3-xlarge w3-padding-32">Level 2</li>
+                  <li class="w3-padding-16">
+                      <h2 class="w3-wide">$ 50</h2>
+                      <span class="w3-opacity">per month</span>
+                  </li>
+                  <li class="w3-padding-16">Signal        : Unlimited</li>
+                  <li class="w3-padding-16">NASDAQ        : Unlimited</li>
+                  <li class="w3-padding-16">Currency      : Unlimited</li>
+                  <li class="w3-padding-16">Stocks        : Unlimited</li>
+                  <li class="w3-padding-16">Volatility 75 : Unlimited</li>
+                  <li class="w3-padding-16">Trading Videos & Strategy</li>
+                  <li class="w3-padding-16">Trading Setups</li>
+                  <li class="w3-padding-16">Issued 24/7</li>
+                  <li class="w3-light-grey w3-padding-24">
+                      <a href="checkout.php?level=2&amount=10" class="w3-button w3-red w3-round" target="_blank">
+                          <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                      </a>
+                  </li>
+              </ul>
         </div>
 
         <div class="w3-quarter w3-section">
+
+        </div>
+        <!--<div class="w3-quarter w3-section">
           <ul class="w3-ul w3-white w3-hover-shadow">
             <li class="w3-flat-turquoise w3-xlarge w3-padding-32">Level 3</li>
               <li class="w3-padding-16">
@@ -185,7 +197,7 @@
               <li class="w3-padding-16">Stocks : 3 a day</li>
               <li class="w3-padding-16">Issued 24/7</li>
               <li class="w3-light-grey w3-padding-24">
-                  <a href="checkout.php?level=3" class="w3-flat-turquoise w3-button w3-round" target="_blank">
+                  <a href="checkout.php?level=3&amount=30" class="w3-flat-turquoise w3-button w3-round" target="_blank">
                       <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
                   </a>
               </li>
@@ -193,22 +205,22 @@
         </div>
 
         <div class="w3-quarter">
-          <ul class="w3-ul w3-white w3-hover-shadow">
-              <li class="w3-red w3-xlarge w3-padding-48">Level 4</li>
-              <li class="w3-padding-16">
-                  <h2 class="w3-wide">$ 50</h2>
-                  <span class="w3-opacity">per month</span>
-              </li>
-              <li class="w3-padding-16">Signal : Unlimited a day</li>
-              <li class="w3-padding-16">Stocks : Unlimited a day</li>
-              <li class="w3-padding-16">Issued 24/7</li>
-              <li class="w3-light-grey w3-padding-24">
-                  <a href="checkout.php?level=4" class="w3-button w3-red w3-round" target="_blank">
-                      <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                  </a>
-              </li>
-          </ul>
-        </div>
+              <ul class="w3-ul w3-white w3-hover-shadow">
+                  <li class="w3-red w3-xlarge w3-padding-48">Level 4</li>
+                  <li class="w3-padding-16">
+                      <h2 class="w3-wide">$ 50</h2>
+                      <span class="w3-opacity">per month</span>
+                  </li>
+                  <li class="w3-padding-16">Signal : Unlimited a day</li>
+                  <li class="w3-padding-16">Stocks : Unlimited a day</li>
+                  <li class="w3-padding-16">Issued 24/7</li>
+                  <li class="w3-light-grey w3-padding-24">
+                      <a href="checkout.php?level=4&amount=50" class="w3-button w3-red w3-round" target="_blank">
+                          <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                      </a>
+                  </li>
+              </ul>
+        </div> -->
 
     </div>
 </div>
