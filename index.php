@@ -28,12 +28,12 @@
     }
 
     img#howtoImg{
-         width:350px
+        width:350px
     }
 
     img#mySlides{
         width: 100%;
-        height: 700px;
+        height: 100%;
     }
 
     @media screen and (max-width: 600px) {
@@ -131,97 +131,178 @@
   </div>
 </div>
 
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:50px 16px" id="pricing">
-    <h3>PRICING</h3>
-    <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+<div class="w3-container" id="pricing">
+    <div class="w3-container">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Forex')">Forex</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Binary')">Binary</button>
+            <!-- <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Bitcoin')">Bitcoin Mining</button> -->
+        </div>
+    </div>
 
-    <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-container">
+        <div id="Forex" class="w3-container w3-border city">
 
-        <div class="w3-quarter w3-section">
+            <!-- Pricing Section -->
+            <div class="w3-container w3-center w3-dark-grey" style="padding:50px 16px">
+                <h3>PRICING</h3>
+                <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+
+                <div class="w3-row-padding" style="margin-top:64px">
+
+                    <div class="w3-quarter w3-section">
+
+                    </div>
+
+                    <div class="w3-quarter w3-section">
+                        <ul class="w3-ul w3-white w3-hover-shadow">
+                            <li class="w3-flat-turquoise w3-xlarge w3-padding-48"> Fx Level 1</li>
+                            <li class="w3-padding-16">
+                                <h2 class="w3-wide">Free</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-padding-16">Signal 1-5 a day</li>
+                            <li class="w3-padding-16">NASDAQ : None</li>
+                            <li class="w3-padding-16">Issued 24/7</li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <a class="w3-button w3-flat-turquoise w3-round" href="https://t.me/joinchat/AAAAAEcOPmdEy_mM68DIlw" target="_blank">
+                                    <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-quarter" aria-disabled="true">
+                        <ul class="w3-ul w3-white w3-hover-shadow">
+                            <li class="w3-red w3-xlarge w3-padding-32"> Fx Level 2</li>
+                            <li class="w3-padding-16">
+                                <h2 class="w3-wide">$ 50</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-padding-16">Signal        : Unlimited</li>
+                            <li class="w3-padding-16">NASDAQ        : Unlimited</li>
+                            <li class="w3-padding-16">Currency      : Unlimited</li>
+                            <li class="w3-padding-16">Stocks        : Unlimited</li>
+                            <li class="w3-padding-16">Volatility 75 : Unlimited</li>
+                            <li class="w3-padding-16">Trading Videos & Strategy</li>
+                            <li class="w3-padding-16">Trading Setups</li>
+                            <li class="w3-padding-16">Issued 24/7</li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <a href="checkout.php?level=2&amount=10" class="w3-button w3-red w3-round" target="_blank">
+                                    <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-quarter w3-section">
+
+                    </div>
+                    <!--<div class="w3-quarter w3-section">
+                      <ul class="w3-ul w3-white w3-hover-shadow">
+                        <li class="w3-flat-turquoise w3-xlarge w3-padding-32">Level 3</li>
+                          <li class="w3-padding-16">
+                              <h2 class="w3-wide">$ 30</h2>
+                              <span class="w3-opacity">per month</span>
+                          </li>
+                          <li class="w3-padding-16">Signal 10 and above a day</li>
+                          <li class="w3-padding-16">Stocks : 3 a day</li>
+                          <li class="w3-padding-16">Issued 24/7</li>
+                          <li class="w3-light-grey w3-padding-24">
+                              <a href="checkout.php?level=3&amount=30" class="w3-flat-turquoise w3-button w3-round" target="_blank">
+                                  <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+
+                    <div class="w3-quarter">
+                          <ul class="w3-ul w3-white w3-hover-shadow">
+                              <li class="w3-red w3-xlarge w3-padding-48">Level 4</li>
+                              <li class="w3-padding-16">
+                                  <h2 class="w3-wide">$ 50</h2>
+                                  <span class="w3-opacity">per month</span>
+                              </li>
+                              <li class="w3-padding-16">Signal : Unlimited a day</li>
+                              <li class="w3-padding-16">Stocks : Unlimited a day</li>
+                              <li class="w3-padding-16">Issued 24/7</li>
+                              <li class="w3-light-grey w3-padding-24">
+                                  <a href="checkout.php?level=4&amount=50" class="w3-button w3-red w3-round" target="_blank">
+                                      <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                                  </a>
+                              </li>
+                          </ul>
+                    </div> -->
+
+                </div>
+            </div>
 
         </div>
 
-        <div class="w3-quarter w3-section">
-          <ul class="w3-ul w3-white w3-hover-shadow">
-            <li class="w3-flat-turquoise w3-xlarge w3-padding-48">Level 1</li>
-            <li class="w3-padding-16">
-                <h2 class="w3-wide">Free</h2>
-                <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-padding-16">Signal 1-5 a day</li>
-            <li class="w3-padding-16">NASDAQ : None</li>
-            <li class="w3-padding-16">Issued 24/7</li>
-            <li class="w3-light-grey w3-padding-24">
-                <a class="w3-button w3-flat-turquoise w3-round" href="https://t.me/joinchat/AAAAAEcOPmdEy_mM68DIlw" target="_blank">
-                    <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                </a>
-            </li>
-          </ul>
+        <!-- Binary trading -->
+        <div id="Binary" class="w3-container w3-border city" style="display:none">
+
+            <h1>Comimg Soon.</h1>
+
+            <!-- Pricing Section -->
+            <!-- <div class="w3-container w3-center w3-brown" style="padding:50px 16px" >
+                <h3>PRICING</h3>
+                <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+
+                <div class="w3-row-padding" style="margin-top:64px">
+
+                    <div class="w3-quarter w3-section">
+
+                    </div>
+
+                    <div class="w3-quarter w3-section">
+                        <ul class="w3-ul w3-white w3-hover-shadow">
+                            <li class="w3-flat-turquoise w3-xlarge w3-padding-48"> Binary Level 1</li>
+                            <li class="w3-padding-16">
+                                <h2 class="w3-wide">$ 10</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-padding-16">Signal 1-5 a day</li>
+                            <li class="w3-padding-16">Issued 24/7</li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <a class="w3-button w3-flat-turquoise w3-round" href="https://t.me/joinchat/AAAAAEcOPmdEy_mM68DIlw" target="_blank">
+                                    <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-quarter" aria-disabled="true">
+                        <ul class="w3-ul w3-white w3-hover-shadow">
+                            <li class="w3-red w3-xlarge w3-padding-32"> Binary Level 2</li>
+                            <li class="w3-padding-16">
+                                <h2 class="w3-wide">$ 20</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-padding-16">Signal        : Unlimited</li>
+                            <li class="w3-padding-16">Issued 24/7</li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <a href="checkout.php?level=2&amount=10" class="w3-button w3-red w3-round" target="_blank">
+                                    <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-quarter w3-section">
+
+                    </div>
+
+                </div>
+            </div> -->
+
         </div>
 
-        <div class="w3-quarter" aria-disabled="true">
-              <ul class="w3-ul w3-white w3-hover-shadow">
-                <li class="w3-red w3-xlarge w3-padding-32">Level 2</li>
-                  <li class="w3-padding-16">
-                      <h2 class="w3-wide">$ 50</h2>
-                      <span class="w3-opacity">per month</span>
-                  </li>
-                  <li class="w3-padding-16">Signal        : Unlimited</li>
-                  <li class="w3-padding-16">NASDAQ        : Unlimited</li>
-                  <li class="w3-padding-16">Currency      : Unlimited</li>
-                  <li class="w3-padding-16">Stocks        : Unlimited</li>
-                  <li class="w3-padding-16">Volatility 75 : Unlimited</li>
-                  <li class="w3-padding-16">Trading Videos & Strategy</li>
-                  <li class="w3-padding-16">Trading Setups</li>
-                  <li class="w3-padding-16">Issued 24/7</li>
-                  <li class="w3-light-grey w3-padding-24">
-                      <a href="checkout.php?level=2&amount=10" class="w3-button w3-red w3-round" target="_blank">
-                          <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                      </a>
-                  </li>
-              </ul>
-        </div>
-
-        <div class="w3-quarter w3-section">
-
-        </div>
-        <!--<div class="w3-quarter w3-section">
-          <ul class="w3-ul w3-white w3-hover-shadow">
-            <li class="w3-flat-turquoise w3-xlarge w3-padding-32">Level 3</li>
-              <li class="w3-padding-16">
-                  <h2 class="w3-wide">$ 30</h2>
-                  <span class="w3-opacity">per month</span>
-              </li>
-              <li class="w3-padding-16">Signal 10 and above a day</li>
-              <li class="w3-padding-16">Stocks : 3 a day</li>
-              <li class="w3-padding-16">Issued 24/7</li>
-              <li class="w3-light-grey w3-padding-24">
-                  <a href="checkout.php?level=3&amount=30" class="w3-flat-turquoise w3-button w3-round" target="_blank">
-                      <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                  </a>
-              </li>
-          </ul>
-        </div>
-
-        <div class="w3-quarter">
-              <ul class="w3-ul w3-white w3-hover-shadow">
-                  <li class="w3-red w3-xlarge w3-padding-48">Level 4</li>
-                  <li class="w3-padding-16">
-                      <h2 class="w3-wide">$ 50</h2>
-                      <span class="w3-opacity">per month</span>
-                  </li>
-                  <li class="w3-padding-16">Signal : Unlimited a day</li>
-                  <li class="w3-padding-16">Stocks : Unlimited a day</li>
-                  <li class="w3-padding-16">Issued 24/7</li>
-                  <li class="w3-light-grey w3-padding-24">
-                      <a href="checkout.php?level=4&amount=50" class="w3-button w3-red w3-round" target="_blank">
-                          <i class="fa fa-paper-plane w3-hover-opacity"></i> Join Channel
-                      </a>
-                  </li>
-              </ul>
+        <!-- Bitcoin Mining -->
+        <!-- <div id="Bitcoin" class="w3-container w3-border city" style="display:none">
+            <h2>Bitcoin</h2>
+            <p>Bitcoin mining pricing</p>
         </div> -->
-
     </div>
 </div>
 
@@ -914,6 +995,22 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+//Function for Tabs
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+    }
+
 </script>
 <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
 <!--
