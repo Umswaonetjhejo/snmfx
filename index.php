@@ -135,7 +135,7 @@
     <div class="w3-container">
         <div class="w3-bar w3-black">
             <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Forex')">Forex</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Binary')">Binary</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Binary')">Binary Option</button>
             <!-- <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Bitcoin')">Bitcoin Mining</button> -->
         </div>
     </div>
